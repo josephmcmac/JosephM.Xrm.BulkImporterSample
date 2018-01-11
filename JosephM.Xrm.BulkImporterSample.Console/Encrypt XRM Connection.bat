@@ -1,0 +1,1 @@
+JosephM.Xrm.BulkImporterSample.Console.exe -xrmsetting

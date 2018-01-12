@@ -4,7 +4,7 @@
 if (typeof Xrm === 'undefined')
     Xrm = window.parent.Xrm;
 
-jmcg_bisWebApiUtility = function () {
+Jmcg_bisWebApiUtility = function () {
     var that = this;
     this.FieldType =
     {
@@ -191,4 +191,4 @@ jmcg_bisWebApiUtility = function () {
     }
 }
 
-Jmcg_bisWebApiUtility = new jmcg_bisWebApiUtility();
+jmcg_bisWebApiUtility = new Jmcg_bisWebApiUtility();

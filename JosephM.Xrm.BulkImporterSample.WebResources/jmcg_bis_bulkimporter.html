@@ -1,0 +1,40 @@
+
+
+<html>
+<head>
+    <script type="text/javascript" src="ClientGlobalContext.js.aspx"></script>
+    <script language="javascript" type="text/javascript" src="jmcg_bis_jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="jmcg_bis_jqueryui.js"></script>
+    <script language="javascript" type="text/javascript" src="jmcg_bis_bulkimporter.js"></script>
+    <script language="javascript" type="text/javascript" src="jmcg_bis_webapiutility.js"></script>
+    <link type="text/css" rel="stylesheet" href="jmcg_bis_custom.css" />
+    <link type="text/css" rel="stylesheet" href="jmcg_bis_jqueryui.css" />
+</head>
+<body>
+    <h1>Opportunity Importer</h1>
+    <p>
+        Be aware existing values in records which match will not be overwritten. For instance if a contact matches by email on the account, that contact will be used and their name will not be overwritten by the import
+    </p>
+    <div id="fileselector">
+        <div>
+            <a class="button" download="Opportunity Import Template.csv" href="data:text/csv;charset=utf-8,First Name,Last Name,Email,Mobile Phone,Business Phone,Job Title,Company,Topic">Download Template1</a>
+        </div>
+        <p>Select the csv file to import</p>
+        <div>
+            <form enctype="multipart/form-data">
+                <input class="button" id="upload" type=file accept=".csv" name="files[]" size=30>
+            </form>
+        </div>
+    </div>
+    <div id="import">
+        <div>
+            <button class="importbutton button">Run Import</button><span id="importerrordetails" style="color: red; padding-left: 20px; font-weight: bold" ></span>
+        </div>
+        <br />
+        <div style="width: 680px" id="progressbar"></div>
+        <br />
+        <div class="csvtablediv">
+        </div>
+    </div>
+</body>
+</html>

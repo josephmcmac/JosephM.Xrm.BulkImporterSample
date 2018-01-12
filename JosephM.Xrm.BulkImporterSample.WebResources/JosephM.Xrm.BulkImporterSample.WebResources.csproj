@@ -43,6 +43,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="jmcg_bis_custom.css" />
+    <Content Include="jmcg_bis_jqueryui.css" />
+    <Content Include="jmcg_bis_jqueryui.js" />
+    <Content Include="jmcg_bis_cross.jpg" />
+    <Content Include="jmcg_bis_error.png" />
+    <Content Include="jmcg_bis_loading.gif" />
+    <Content Include="jmcg_bis_processing.gif" />
+    <Content Include="jmcg_bis_tick.jpg" />
+    <Content Include="jmcg_bis_bulkimporter.js" />
+    <Content Include="jmcg_bis_bulkimporter.html" />
     <Content Include="jmcg_bis_jquery.js" />
     <Content Include="jmcg_bis_pageutility.js" />
     <Content Include="jmcg_bis_webapiutility.js" />

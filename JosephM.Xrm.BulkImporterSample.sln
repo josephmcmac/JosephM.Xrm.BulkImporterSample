@@ -17,6 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		SolutionItems\xrmpackage.xrmsettings = SolutionItems\xrmpackage.xrmsettings
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Releases", "Releases", "{5CA3DE6F-F3ED-48D4-B724-AFA73CCBCC69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0.0.0", "1.0.0.0", "{D32DF854-686A-406D-AD9E-CE1B85D7F9F9}"
+	ProjectSection(SolutionItems) = preProject
+		Releases\1.0.0.0\BulkImporterSample_1_0_0_0.zip = Releases\1.0.0.0\BulkImporterSample_1_0_0_0.zip
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +49,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D32DF854-686A-406D-AD9E-CE1B85D7F9F9} = {5CA3DE6F-F3ED-48D4-B724-AFA73CCBCC69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C9F7FF51-4954-43BE-82E1-4D470360E98F}

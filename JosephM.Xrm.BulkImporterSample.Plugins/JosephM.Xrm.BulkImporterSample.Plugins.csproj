@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>JosephM.Xrm.BulkImporterSample.Plugins</RootNamespace>
     <AssemblyName>JosephM.Xrm.BulkImporterSample.Plugins</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,6 +29,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>JosephM.Xrm.BulkImporterSample.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -116,6 +123,7 @@
     <Compile Include="Schema.cs" />
     <Compile Include="Services\jmcg_bisService.cs" />
     <Compile Include="Workflows\jmcg_bisWorkflowActivity.cs" />
+    <Compile Include="Workflows\BulkImporterCreateRecord.cs" />
     <Compile Include="Xrm\DeviceIdManager.cs" />
     <Compile Include="Xrm\ExceptionExtentions.cs" />
     <Compile Include="Xrm\IXrmConfiguration.cs" />
@@ -135,7 +143,9 @@
     <Compile Include="Xrm\XrmWorkflowActivityInstanceBase.cs" />
     <Compile Include="Xrm\XrmWorkflowActivityRegistration.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="JosephM.Xrm.BulkImporterSample.snk" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Lib\Microsoft.Crm.Sdk.Proxy.dll" />
     <Content Include="Lib\Microsoft.Xrm.Sdk.dll" />
